@@ -40,7 +40,7 @@ input[type="button"] {
     border: none;
     padding: 4px 10px;
     font-weight: bold;
-    border-radius: 0 6px 6px 0;
+    border-radius: 0px 6px 6px 0px;
     cursor: pointer;
     transition: all ease-in-out 200ms;
 }
@@ -66,7 +66,7 @@ ul#estudantes > li {
     border: 1px solid var(--primary-color);
     position: relative;
     border-radius: 6px;
-    padding: 8px
+    padding: 12px;
 }
 
 ul#estudantes > li h2 {
@@ -106,14 +106,19 @@ ul#estudantes ol li span {
     width: 100%;
 }
 
-@media only screen and (max-width: 418px) {
+@media only screen and (max-width: 495px) {
     body {
         background-color: pink;
+        padding: 8px 32px;
     }
 
     ul#estudantes {
         display: flex;
         flex-direction: column;
+    }
+
+    ul#estudantes > li {
+        background-color: #fff;
     }
 }
 
